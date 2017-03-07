@@ -1,9 +1,26 @@
-$blue:#9FBFBF;
-$margin:5%;
-$cream:#F2EFEB;
-$cream2:$cream - 100;
+$blue: #9FBFBF;
+$mainFont: lato,helvetica, ariel, sans-serif;
+$margin: 5%;
+$cream: #F2EFEB;
+$cream2: $cream - 100;
 
-body{
-    background:$blue;
-    font-family: helvetica, ariel, sans-serif;
+header {
+    h1 {
+        color: $blue;
+    }
+
+    h2 {
+        color: $blue;
+    }
+}
+
+body {
+    background: $blue;
+    font-family: $mainFont;
+
+    .par1 {
+        a {
+            font-size: 24px;
+        }
+    }
 }

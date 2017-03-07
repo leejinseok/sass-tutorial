@@ -1,5 +1,12 @@
+header h1 {
+  color: #9FBFBF; }
+header h2 {
+  color: #9FBFBF; }
+
 body {
   background: #9FBFBF;
-  font-family: helvetica, ariel, sans-serif; }
+  font-family: lato, helvetica, ariel, sans-serif; }
+  body .par1 a {
+    font-size: 24px; }
 
 /*# sourceMappingURL=style.css.map */
