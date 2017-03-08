@@ -4,6 +4,12 @@ $margin: 5%;
 $cream: #F2EFEB;
 $cream2: $cream - 100;
 
+@mixin border-radius($radius: 20px) {
+    border-radius:$radius;
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+}
+
 header {
     h1 {
         color: $blue;
@@ -11,6 +17,13 @@ header {
 
     h2 {
         color: $blue;
+    }
+}
+
+div{
+    .grad{
+        @include border-radius(5px);
+        border:1px solid #fff;
     }
 }
 

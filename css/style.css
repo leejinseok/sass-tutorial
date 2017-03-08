@@ -3,6 +3,12 @@ header h1 {
 header h2 {
   color: #9FBFBF; }
 
+div .grad {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #fff; }
+
 body {
   background: #9FBFBF;
   font-family: lato, helvetica, ariel, sans-serif; }
