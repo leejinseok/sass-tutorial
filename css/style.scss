@@ -19,14 +19,6 @@ header {
         color: $blue;
     }
 }
-
-div{
-    .grad{
-        @include border-radius(5px);
-        border:1px solid #fff;
-    }
-}
-
 body {
     background: $blue;
     font-family: $mainFont;
@@ -35,5 +27,28 @@ body {
         a {
             font-size: 24px;
         }
+    }
+}
+
+.grad{
+    padding:1%;
+    @include border-radius(5px);
+    border:1px solid #fff;
+    background-color:$cream;
+    .intro{
+        background-color:#333;
+        @include border-radius;
+        .par1{
+            color:$blue+100;
+            a{
+                font-size:20px;
+                background-color:$cream;
+                @include border-radius;
+            }
+        }
+    }
+    .feature {
+        @extend .intro;
+        border:1px solid yellow;
     }
 }
