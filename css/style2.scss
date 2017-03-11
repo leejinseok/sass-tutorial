@@ -43,6 +43,9 @@
 .circle{
     @include circle(200px, #999);
     display: block;
+    &:hover{
+        background-color: black;
+    }
 }
 .triangle{
     @include triangle(200px, down, #999);

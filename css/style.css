@@ -1,13 +1,28 @@
-header h1 {
-  color: #9FBFBF; }
-header h2 {
-  color: #9FBFBF; }
-
 body {
   background: #9FBFBF;
   font-family: lato, helvetica, ariel, sans-serif; }
   body .par1 a {
     font-size: 24px; }
+
+header h1 {
+  color: #9FBFBF; }
+header h2 {
+  color: #9FBFBF; }
+
+ul.social-links li {
+  list-style: none; }
+  ul.social-links li a {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    text-indent: -999px; }
+
+.facebook {
+  background: url("../img/facebook.png") no-repeat; }
+
+.instagram {
+  background: url("../img/instagram.png") no-repeat; }
 
 .grad {
   padding: 1%;
@@ -31,5 +46,15 @@ body {
         -moz-border-radius: 20px; }
   .grad .feature {
     border: 1px solid yellow; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
 
 /*# sourceMappingURL=style.css.map */

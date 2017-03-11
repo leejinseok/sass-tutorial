@@ -9,6 +9,8 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   display: block; }
+  .circle:hover {
+    background-color: black; }
 
 .triangle {
   width: 0;

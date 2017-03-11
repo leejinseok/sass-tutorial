@@ -10,6 +10,17 @@ $cream2: $cream - 100;
     -moz-border-radius:$radius;
 }
 
+body {
+    background: $blue;
+    font-family: $mainFont;
+
+    .par1 {
+        a {
+            font-size: 24px;
+        }
+    }
+}
+
 header {
     h1 {
         color: $blue;
@@ -19,14 +30,22 @@ header {
         color: $blue;
     }
 }
-body {
-    background: $blue;
-    font-family: $mainFont;
 
-    .par1 {
-        a {
-            font-size: 24px;
-        }
+ul.social-links li{
+    list-style: none;
+    a{
+        display:block;
+        float:left;
+        width:60px;
+        height:60px;
+        text-indent: -999px;
+    }
+}
+
+$icons:(facebook, instagram);
+@each $social in $icons{
+    .#{$social} {
+        background: url('../img/#{$social}.png') no-repeat;
     }
 }
 
@@ -51,4 +70,14 @@ body {
         @extend .intro;
         border:1px solid yellow;
     }
+}
+
+.clearfix:before, .clearfix:after{
+    content:"";display: table;
+}
+.clearfix:after{
+    clear:both;
+}
+.clearfix{
+    *zoom:1;
 }
